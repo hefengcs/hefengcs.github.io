@@ -48,6 +48,34 @@
       font-size: 0.95rem;
       color: #aaa;
     }
+    .embed-box {
+      width: 90%;
+      margin: 2rem auto;
+      background-color: #111;
+      padding: 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 4px;
+    }
+    .download-links {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .download-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1rem;
+      background-color: #72ff8a;
+      color: #000;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -60,8 +88,9 @@
   <header>
     <h1>XLFM-Former: Rapid 3D Reconstruction for Light Field Microscopy</h1>
   </header>
+
   <div class="section">
-    <h2>Augmentation Comparison</h2>
+    <h2>Comparison</h2>
     <div class="video-box">
       <video autoplay loop muted playsinline>
         <source src="assets/mip_video.mp4" type="video/mp4">
@@ -70,6 +99,24 @@
       <div class="caption">Maximum Intensity Projection (MIP)</div>
     </div>
   </div>
+
+  <!-- 新增内容：PDF 预览 -->
+  <div class="section">
+    <h2>Project PDF</h2>
+    <div class="embed-box">
+      <iframe src="assets/XLFM.pdf"></iframe>
+    </div>
+  </div>
+
+  <!-- 新增内容：下载链接 -->
+  <div class="section">
+    <h2>Download Code</h2>
+    <div class="download-links">
+      <a href="assets/XLFM.zip" download>Download Source Code (.zip)</a>
+      <a href="assets/XLFM.pdf" download>Download PDF Paper</a>
+    </div>
+  </div>
+
   <footer>
     Built by Feng He | Project: XLFM-Former @ USTC, 2025
   </footer>
