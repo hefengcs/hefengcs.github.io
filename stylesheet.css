@@ -68,6 +68,10 @@ a {
   text-decoration: none;
 }
 
+a:not(:hover):not(:focus) papertitle {
+  color: #000;
+}
+
 a:focus,
 a:hover {
   color: #f09228;
